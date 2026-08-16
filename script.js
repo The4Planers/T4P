@@ -44,31 +44,3 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCase()});
 
 const progress=document.querySelector(".progress span");
 window.addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${h>0?(scrollY/h)*100:0}%`},{passive:true});
-
-// V7 media reliability: explicitly start muted videos when the browser allows it,
-// pause off-screen project videos, and keep the case-study video fully visible.
-const heroVideo=document.querySelector('.hero-bg-video');
-if(heroVideo){
-  const startHero=()=>heroVideo.play().catch(()=>{});
-  if(heroVideo.readyState>=2) startHero();
-  else heroVideo.addEventListener('canplay',startHero,{once:true});
-  heroVideo.addEventListener('error',()=>heroVideo.setAttribute('data-video-error','true'));
-}
-
-const projectVideos=[...document.querySelectorAll('.project-tile.video video')];
-const mediaObserver=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    const v=entry.target;
-    if(entry.isIntersecting){
-      v.play().catch(()=>{});
-    }else{
-      v.pause();
-    }
-  });
-},{threshold:.2});
-projectVideos.forEach(v=>{
-  v.muted=true;
-  v.playsInline=true;
-  v.addEventListener('error',()=>v.setAttribute('data-video-error','true'));
-  mediaObserver.observe(v);
-});
