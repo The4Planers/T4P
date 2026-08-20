@@ -1,22 +1,7 @@
-const compare=document.getElementById('compare');
-const overlay=document.getElementById('overlay');
-const handle=document.getElementById('handle');
-let dragging=false;
-function setPos(clientX){
-  const r=compare.getBoundingClientRect();
-  let p=((clientX-r.left)/r.width)*100;
-  p=Math.max(2,Math.min(98,p));
-  overlay.style.width=p+'%';
-  handle.style.left=p+'%';
-  handle.setAttribute('aria-valuenow',Math.round(p));
-}
-compare.addEventListener('pointerdown',e=>{dragging=true;compare.setPointerCapture(e.pointerId);setPos(e.clientX)});
-compare.addEventListener('pointermove',e=>{if(dragging)setPos(e.clientX)});
-compare.addEventListener('pointerup',()=>dragging=false);
-compare.addEventListener('pointercancel',()=>dragging=false);
-handle.addEventListener('keydown',e=>{
-  const step=e.shiftKey?10:2;
-  const current=parseFloat(handle.style.left)||50;
-  if(e.key==='ArrowLeft')setPos(compare.getBoundingClientRect().left+(current-step)/100*compare.getBoundingClientRect().width);
-  if(e.key==='ArrowRight')setPos(compare.getBoundingClientRect().left+(current+step)/100*compare.getBoundingClientRect().width);
-});
+const intro=document.getElementById('intro');
+window.addEventListener('load',()=>setTimeout(()=>intro.classList.add('hide'),1500));
+const compare=document.getElementById('compare'), model=document.querySelector('.compare-model'), handle=document.getElementById('compareHandle');
+function move(x){const r=compare.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(3,Math.min(97,p));model.style.width=p+'%';handle.style.left=p+'%'}
+compare.addEventListener('pointerdown',e=>{compare.setPointerCapture(e.pointerId);move(e.clientX)});compare.addEventListener('pointermove',e=>{if(e.buttons)move(e.clientX)});
+compare.addEventListener('touchstart',e=>move(e.touches[0].clientX),{passive:true});compare.addEventListener('touchmove',e=>move(e.touches[0].clientX),{passive:true});
+const vids=document.querySelectorAll('video'); const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.play().catch(()=>{});else e.target.pause()}),{threshold:.15}); vids.forEach(v=>io.observe(v));

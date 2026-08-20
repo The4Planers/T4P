@@ -1,116 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The4Planers — Reality to Intelligent BIM</title>
-  <meta name="description" content="The4Planers — Scan to BIM, CAD to BIM, Revit BIM modeling and MEP coordination.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The4Planers — Scan to BIM | CAD to BIM | Revit</title>
+<meta name="description" content="The4Planers transforms reality into intelligent BIM through Scan to BIM, CAD to BIM and Revit modeling.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="intro" id="intro">
-    <div class="intro-mark">T4P</div>
-    <div class="intro-text">WELCOME TO <strong>THE4PLANERS</strong></div>
+<div class="intro" id="intro"><div class="intro-mark">T4P</div><div class="intro-title">WELCOME TO <span>THE4PLANERS</span></div><div class="intro-line"></div></div>
+<header class="nav">
+  <a class="brand" href="#top"><span class="brand-box">T4P</span><span>THE4PLANERS</span></a>
+  <nav class="navlinks"><a href="#work">WORK</a><a href="#services">SERVICES</a><a href="#process">PROCESS</a><a href="#contact">CONTACT</a></nav>
+  <a class="nav-cta" href="https://wa.me/919522972202" target="_blank" rel="noopener">START A PROJECT <span>↗</span></a>
+</header>
+<main id="top">
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata"><source src="assets/video/hero-bim.mp4" type="video/mp4"></video>
+  <div class="hero-shade"></div><div class="hero-grid"></div>
+  <div class="hero-copy">
+    <div class="eyebrow">SCAN TO BIM / CAD TO BIM / REVIT</div>
+    <h1>Reality<br><em>→</em> Intelligent BIM.</h1>
+    <p>We turn existing buildings, drawings and point clouds into accurate, information-rich Revit models.</p>
+    <div class="hero-actions"><a class="pill light" href="#work">EXPLORE OUR WORK <span>↓</span></a><a class="pill ghost" href="#services">WHAT WE DO</a></div>
   </div>
-
-  <header class="nav">
-    <a class="brand" href="#top"><span>T4P</span><small>THE4PLANERS</small></a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#work">Projects</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Start a Project ↗</a>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">SCAN TO BIM · CAD TO BIM · REVIT</p>
-          <h1>Reality<br><em>→</em> Intelligent BIM.</h1>
-          <p class="hero-sub">We transform existing buildings, point clouds and legacy drawings into accurate, coordinated BIM models.</p>
-          <a class="pill" href="#work">Explore our work ↓</a>
-        </div>
-        <div class="hero-side">
-          <div class="hero-number">01</div>
-          <p>PRECISION<br>FROM CAPTURE<br>TO MODEL</p>
-        </div>
-      </div>
-      <div class="hero-line"></div>
-    </section>
-
-    <section class="reveal-section">
-      <div class="section-kicker">01 / FROM REALITY TO BIM</div>
-      <div class="reveal-head">
-        <h2>See the<br><em>transformation.</em></h2>
-        <p>Drag the divider to compare the point cloud with the developed BIM model.</p>
-      </div>
-
-      <div class="compare" id="compare" aria-label="Point cloud and BIM model comparison">
-        <img class="compare-base" src="assets/point-cloud.png" alt="Point cloud facade">
-        <div class="compare-overlay" id="overlay">
-          <img src="assets/bim-model.png" alt="BIM model facade">
-        </div>
-        <div class="compare-label left">POINT CLOUD</div>
-        <div class="compare-label right">BIM MODEL</div>
-        <div class="compare-handle" id="handle" role="slider" aria-label="Comparison divider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-          <span>↔</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <div class="section-kicker">02 / WHAT WE DO</div>
-      <div class="services-grid">
-        <article><span>01</span><h3>Scan to BIM</h3><p>Point-cloud based architectural, structural and MEP modeling.</p></article>
-        <article><span>02</span><h3>CAD to BIM</h3><p>Legacy 2D drawings transformed into structured Revit models.</p></article>
-        <article><span>03</span><h3>Revit BIM</h3><p>LOD 300–500 modeling for design, documentation and coordination.</p></article>
-        <article><span>04</span><h3>MEP Coordination</h3><p>Federated models, coordination support and clash-focused workflows.</p></article>
-      </div>
-    </section>
-
-    <section class="projects" id="work">
-      <div class="section-kicker">03 / SELECTED WORK</div>
-      <div class="project-intro">
-        <h2>Built from<br><em>real data.</em></h2>
-        <p>Each project opens into a focused case study — model, scan, video, scope and delivery details.</p>
-      </div>
-      <a class="project-card" href="#contact">
-        <div class="project-image"><img src="assets/bim-model.png" alt="Egypt industrial BIM model"></div>
-        <div class="project-meta">
-          <div><span>EGYPT / INDUSTRIAL</span><strong>LOD 500</strong></div>
-          <h3>Existing Facility → Intelligent BIM</h3>
-          <p>Scan to BIM · Architectural · Structural · MEP</p>
-          <span class="project-link">View project ↗</span>
-        </div>
-      </a>
-    </section>
-
-    <section class="process" id="process">
-      <div class="section-kicker">04 / OUR PROCESS</div>
-      <div class="process-row">
-        <div><b>01</b><strong>SCAN</strong><p>Reality capture</p></div>
-        <div><b>02</b><strong>REGISTER</strong><p>Point-cloud preparation</p></div>
-        <div><b>03</b><strong>MODEL</strong><p>Revit BIM development</p></div>
-        <div><b>04</b><strong>COORDINATE</strong><p>QA/QC & coordination</p></div>
-        <div><b>05</b><strong>DELIVER</strong><p>Ready-to-use BIM</p></div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="section-kicker">05 / LET'S WORK TOGETHER</div>
-      <h2>Have a project<br><em>in mind?</em></h2>
-      <div class="contact-row">
-        <a href="https://wa.me/919522972202" target="_blank" rel="noopener">WhatsApp ↗</a>
-        <a href="https://www.linkedin.com/company/the4planers/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
-    </section>
-  </main>
-
-  <footer><span>© THE4PLANERS</span><span>REALITY → INTELLIGENT BIM</span></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="hero-meta"><span>01 / 06</span><span>ARCHITECTURE · STRUCTURE · MEP</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
+<section class="statement">
+  <div class="section-kicker">THE4PLANERS / ABOUT</div>
+  <div class="statement-grid"><h2>We model what already exists — <span>with clarity.</span></h2><p>From laser scans and point clouds to coordinated BIM, our workflow is built for teams that need dependable digital information, not just geometry.</p></div>
+</section>
+<section class="comparison" id="work">
+  <div class="section-kicker">FEATURED WORK / REALITY → MODEL</div>
+  <div class="comparison-head"><h2>From point cloud<br><span>to intelligent model.</span></h2><p>Drag the divider. This is the kind of transformation we deliver.</p></div>
+  <div class="compare" id="compare"><img src="assets/images/point-cloud.png" alt="Point cloud survey view"><div class="compare-model"><img src="assets/images/bim-model.png" alt="BIM model view"></div><div class="compare-handle" id="compareHandle"><span>↔</span></div><div class="compare-label left">POINT CLOUD</div><div class="compare-label right">BIM MODEL</div></div>
+</section>
+<section class="film">
+  <div class="film-copy"><div class="section-kicker">PROJECT FILM / THE4PLANERS</div><h2>See the model<br><span>come alive.</span></h2><p>A cinematic look at our Revit workflow — geometry, space and information working together.</p></div>
+  <div class="film-frame"><video autoplay muted loop playsinline preload="metadata"><source src="assets/video/project-film.mp4" type="video/mp4"></video><div class="film-caption"><span>01</span><span>MODEL DEVELOPMENT</span><span>↗</span></div></div>
+</section>
+<section class="services" id="services">
+ <div class="section-kicker">CAPABILITIES</div><div class="services-top"><h2>Built around<br><span>your workflow.</span></h2><p>Flexible production support for architects, surveyors, contractors and BIM teams.</p></div>
+ <div class="service-list"><article><span>01</span><h3>SCAN TO BIM</h3><p>Point cloud to accurate Revit models with disciplined geometry and documentation.</p></article><article><span>02</span><h3>CAD TO BIM</h3><p>Legacy drawings transformed into structured, editable BIM information.</p></article><article><span>03</span><h3>REVIT MODELING</h3><p>Architectural, Structural and MEP modeling from concept through high-detail delivery.</p></article><article><span>04</span><h3>MEP COORDINATION</h3><p>Federated models, coordination support and clash-focused BIM workflows.</p></article></div>
+</section>
+<section class="project" id="process"><div class="project-image"><video autoplay muted loop playsinline preload="metadata"><source src="assets/video/hero-bim.mp4" type="video/mp4"></video><div class="project-tag">SCAN → BIM</div></div><div class="project-info"><div class="section-kicker">SELECTED PROJECT / EGYPT</div><h2>LOD 500<br><span>Industrial Model</span></h2><p>High-detail Scan to BIM delivery developed from existing survey information, with a focus on model accuracy and usable project data.</p><div class="project-stats"><div><b>LOD 500</b><small>MODEL DETAIL</small></div><div><b>25 DAYS</b><small>DELIVERY</small></div><div><b>EGYPT</b><small>LOCATION</small></div></div><a class="text-link" href="#contact">DISCUSS A SIMILAR PROJECT ↗</a></div></section>
+<section class="process"><div class="section-kicker">OUR PROCESS</div><h2>Simple for you.<br><span>Precise behind the scenes.</span></h2><div class="steps"><div><span>01</span><b>RECEIVE</b><p>Point cloud, CAD, drawings or existing model.</p></div><div><span>02</span><b>REGISTER</b><p>Validate references, coordinates and project scope.</p></div><div><span>03</span><b>MODEL</b><p>Build disciplined Revit geometry and information.</p></div><div><span>04</span><b>QA / DELIVER</b><p>Review, coordinate and deliver the agreed package.</p></div></div></section>
+<section class="contact" id="contact"><div class="contact-big">LET'S BUILD<br><span>YOUR DIGITAL TWIN.</span></div><div class="contact-bottom"><p>Have a point cloud, CAD set or BIM requirement? Tell us what you need.</p><div class="contact-links"><a href="https://wa.me/919522972202" target="_blank" rel="noopener">WHATSAPP ↗</a><a href="https://www.linkedin.com/company/the4planers/" target="_blank" rel="noopener">LINKEDIN ↗</a><a href="mailto:info@the4planers.com">EMAIL ↗</a></div></div></section>
+</main>
+<footer><span>© 2026 THE4PLANERS</span><span>SCAN TO BIM · CAD TO BIM · REVIT</span><a href="#top">BACK TO TOP ↑</a></footer>
+<script src="script.js"></script>
+</body></html>

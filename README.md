@@ -1,9 +1,13 @@
-# The4Planers Portfolio V5
+# The4Planers — Final Website Package
 
-V5 updates Building 8157 with the new project video supplied by the client and adds a cinematic AI background video to the homepage hero.
+Static GitHub Pages-ready website. Upload the contents of this folder to the repository branch used by GitHub Pages.
 
-- Existing 4-project portfolio retained
-- Building 8157 project video replaced
-- AI background video compressed for web and set to muted autoplay loop
-- No build step required
-- Keep the existing CNAME/custom-domain configuration when uploading to GitHub Pages
+## Main media
+- `assets/video/hero-bim.mp4` — hero/scrolling visual
+- `assets/video/project-film.mp4` — featured project film
+- `assets/images/point-cloud.png` — point-cloud side of comparison
+- `assets/images/bim-model.png` — BIM/model side of comparison
+
+## Contact
+WhatsApp: https://wa.me/919522972202
+LinkedIn: https://www.linkedin.com/company/the4planers/
