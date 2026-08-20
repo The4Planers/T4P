@@ -1,12 +1,18 @@
-# The4Planers — Final Website Package
+# The4Planers — FINAL Desktop + Mobile
 
-Static GitHub Pages-ready website. Upload the contents of this folder to the repository branch used by GitHub Pages.
+GitHub Pages-ready static website.
 
-## Main media
-- `assets/video/hero-bim.mp4` — hero/scrolling visual
-- `assets/video/project-film.mp4` — featured project film
-- `assets/images/point-cloud.png` — point-cloud side of comparison
-- `assets/images/bim-model.png` — BIM/model side of comparison
+## Upload
+Upload the **contents of this folder** to the branch used by GitHub Pages.
+
+## Media
+- `assets/video/hero-bim.mp4` — hero background
+- `assets/video/project-film.mp4` — project film
+- `assets/images/point-cloud.png` — comparison image
+- `assets/images/bim-model.png` — comparison image
+
+## Responsive
+Optimized for desktop, tablet and mobile screens, including a mobile navigation menu and touch-friendly comparison slider.
 
 ## Contact
 WhatsApp: https://wa.me/919522972202
