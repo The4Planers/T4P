@@ -1,131 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="The4Planers — Scan to BIM, Point Cloud to Revit, BIM Modeling and BIM Coordination.">
-<title>The4Planers — Reality → Intelligent BIM</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The4Planers — Reality to Intelligent BIM</title>
+  <meta name="description" content="The4Planers — Scan to BIM, CAD to BIM, Revit BIM modeling and MEP coordination.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="grain"></div>
-<div class="progress"><span></span></div>
-
-<header class="nav">
-  <a href="#top" class="brand"><b>T4P</b><span>THE4PLANERS</span></a>
-  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#about">About</a></nav>
-  <a href="#contact" class="nav-cta">Start a project ↗</a>
-</header>
-
-<main id="top">
-<section class="hero">
-  <video class="hero-bg-video" src="assets/hero-background.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
-  <div class="hero-video-overlay"></div>
-  <div class="welcome-badge" aria-hidden="true"><span class="welcome-dot"></span><span>WELCOME, CLIENTS & PARTNERS</span><small>THE4PLANERS / DIGITAL BIM STUDIO</small></div>
-  <div class="hero-grid"></div>
-  <div class="hero-orbit"><span></span><span></span><span></span></div>
-  <div class="eyebrow">SCAN • BIM • COORDINATION</div>
-  <h1><span class="hero-line">REALITY</span><span class="hero-arrow">→</span><span class="hero-line outline">INTELLIGENT</span><span class="hero-line">BIM.</span></h1>
-  <p class="hero-copy">We transform point cloud data, existing drawings and real-world conditions into accurate, coordinated BIM information.</p>
-  <div class="hero-buttons"><a class="btn" href="#projects">Explore our work</a><a href="#services" class="quiet">What we do ↓</a></div>
-  <div class="hero-foot"><span><i></i> DIGITAL MODELING / AEC</span><span>SCROLL TO EXPLORE ↓</span></div>
-  <div class="hero-tag">T4P / 001<br><small>REALITY CAPTURE → DIGITAL TWIN</small></div>
-</section>
-
-<section class="transform reveal">
-  <div class="eyebrow">01 / THE TRANSFORMATION</div>
-  <div class="transform-line"><span>POINT CLOUD</span><i>→</i><span>BIM</span><i>→</i><span>COORDINATION</span></div>
-  <p>Real-world capture becomes structured digital information.</p>
-</section>
-
-<section id="services" class="section">
-  <div class="section-head reveal"><div class="eyebrow">02 / CAPABILITIES</div><h2>BIM BUILT<br>FROM REALITY.</h2></div>
-  <div class="services">
-    <article class="service reveal"><b>01</b><div><h3>SCAN TO BIM</h3><p>Point cloud data transformed into accurate Revit models of existing conditions.</p></div><span>↗</span></article>
-    <article class="service reveal"><b>02</b><div><h3>POINT CLOUD TO REVIT</h3><p>Architectural, structural and MEP elements developed from registered scan data.</p></div><span>↗</span></article>
-    <article class="service reveal"><b>03</b><div><h3>BIM MODELING</h3><p>LOD 100–500 modeling tailored to project requirements and deliverables.</p></div><span>↗</span></article>
-    <article class="service reveal"><b>04</b><div><h3>CAD TO BIM</h3><p>Existing 2D drawings converted into structured, intelligent BIM information.</p></div><span>↗</span></article>
-    <article class="service reveal"><b>05</b><div><h3>BIM COORDINATION</h3><p>Multidisciplinary coordination and clash-focused model review.</p></div><span>↗</span></article>
-    <article class="service reveal"><b>06</b><div><h3>AS-BUILT BIM</h3><p>Reliable digital records for renovation, retrofit and documentation workflows.</p></div><span>↗</span></article>
+  <div class="intro" id="intro">
+    <div class="intro-mark">T4P</div>
+    <div class="intro-text">WELCOME TO <strong>THE4PLANERS</strong></div>
   </div>
-</section>
 
-<section id="projects" class="section projects">
-  <div class="section-head reveal"><div class="eyebrow">03 / SELECTED WORK</div><h2>REAL PROJECTS.<br>REAL DATA.</h2></div>
-  <p class="section-intro reveal">Four compact project stories on the surface. Full technical detail only when a visitor chooses to explore.</p>
-  <div id="projectGrid"></div>
-</section>
+  <header class="nav">
+    <a class="brand" href="#top"><span>T4P</span><small>THE4PLANERS</small></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Start a Project ↗</a>
+  </header>
 
-<section class="section lod">
-  <div class="eyebrow">04 / MODEL DEVELOPMENT</div>
-  <h2 class="reveal">THE LEVEL<br>OF DETAIL<br><em>YOU NEED.</em></h2>
-  <div class="lod-track reveal">
-    <div><strong>100</strong><small>Concept</small></div><div><strong>200</strong><small>Approximate</small></div>
-    <div class="active"><strong>300</strong><small>Design</small></div><div><strong>350</strong><small>Coordination</small></div>
-    <div><strong>400</strong><small>Fabrication</small></div><div><strong>500</strong><small>As-Built</small></div>
-  </div>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SCAN TO BIM · CAD TO BIM · REVIT</p>
+          <h1>Reality<br><em>→</em> Intelligent BIM.</h1>
+          <p class="hero-sub">We transform existing buildings, point clouds and legacy drawings into accurate, coordinated BIM models.</p>
+          <a class="pill" href="#work">Explore our work ↓</a>
+        </div>
+        <div class="hero-side">
+          <div class="hero-number">01</div>
+          <p>PRECISION<br>FROM CAPTURE<br>TO MODEL</p>
+        </div>
+      </div>
+      <div class="hero-line"></div>
+    </section>
 
-<section id="process" class="section">
-  <div class="section-head reveal"><div class="eyebrow">05 / WORKFLOW</div><h2>FROM SCAN<br>TO BIM.</h2></div>
-  <div class="process-grid">
-    <div class="step reveal"><b>01</b><h3>RECEIVE</h3><p>Point cloud, CAD, drawings and project requirements.</p></div>
-    <div class="step reveal"><b>02</b><h3>REVIEW</h3><p>Validate data, scope, tolerances and modeling requirements.</p></div>
-    <div class="step reveal"><b>03</b><h3>MODEL</h3><p>Develop structured BIM elements in the required LOD.</p></div>
-    <div class="step reveal"><b>04</b><h3>COORDINATE</h3><p>Review multidisciplinary information and resolve conflicts.</p></div>
-    <div class="step reveal"><b>05</b><h3>QA / QC</h3><p>Check model quality, consistency and project standards.</p></div>
-    <div class="step reveal"><b>06</b><h3>DELIVER</h3><p>Issue clean, client-ready BIM models and documentation.</p></div>
-  </div>
-</section>
+    <section class="reveal-section">
+      <div class="section-kicker">01 / FROM REALITY TO BIM</div>
+      <div class="reveal-head">
+        <h2>See the<br><em>transformation.</em></h2>
+        <p>Drag the divider to compare the point cloud with the developed BIM model.</p>
+      </div>
 
-<section id="about" class="section about">
-  <div class="eyebrow">06 / THE4PLANERS</div>
-  <div class="about-grid"><h2 class="reveal">MORE THAN<br>A 3D MODEL.</h2>
-  <div class="reveal"><p class="lead">The4Planers is a BIM-focused architecture and engineering service provider specializing in Scan-to-BIM, Point Cloud to Revit, BIM Modeling and BIM Coordination.</p><p>Our work connects real-world conditions with intelligent digital models — with a focus on accuracy, coordination and dependable deliverables.</p></div></div>
-  <div class="stats reveal"><div><strong>SCAN</strong><small>REALITY CAPTURE</small></div><div><strong>BIM</strong><small>INTELLIGENT MODELING</small></div><div><strong>QA/QC</strong><small>DELIVERY CONTROL</small></div><div><strong>LOD 100–500</strong><small>PROJECT FLEXIBILITY</small></div></div>
-</section>
+      <div class="compare" id="compare" aria-label="Point cloud and BIM model comparison">
+        <img class="compare-base" src="assets/point-cloud.png" alt="Point cloud facade">
+        <div class="compare-overlay" id="overlay">
+          <img src="assets/bim-model.png" alt="BIM model facade">
+        </div>
+        <div class="compare-label left">POINT CLOUD</div>
+        <div class="compare-label right">BIM MODEL</div>
+        <div class="compare-handle" id="handle" role="slider" aria-label="Comparison divider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+          <span>↔</span>
+        </div>
+      </div>
+    </section>
 
-<section id="contact" class="contact">
-  <div class="contact-inner">
-    <div class="eyebrow">07 / LET'S CONNECT</div>
-    <h2>HAVE A POINT CLOUD?<br><em>LET'S TURN IT INTO BIM.</em></h2>
-    <a class="btn" href="mailto:the4planers1234@gmail.com">Start your project ↗</a>
-    <div class="contact-links" aria-label="Contact links">
-      <a class="contact-link" href="https://wa.me/919522972202" target="_blank" rel="noopener noreferrer" aria-label="Chat with The4Planers on WhatsApp">
-        <span class="icon whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20.1 3.9A9.9 9.9 0 0 0 3.3 15.8L2 22l6.3-1.2A9.9 9.9 0 0 0 20.1 3.9Z" stroke="currentColor" stroke-width="1.7"/><path d="M8.2 7.3c.2-.4.4-.4.7.4l.6c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c.7 1.4 1.8 2.4 3.2 3.1l.7-.6c.2-.2.4-.2.7-.1l1.8.8c.3.1.4.3.4.5v.6c0 .3 0 .5-.4.7-.4.2-1.1.3-1.5.2-3.7-.9-6.6-3.8-7.5-7.5-.1-.5 0-1.2.2-1.7Z" fill="currentColor"/></svg></span>
-        <span><b>WhatsApp</b><small>+91 95229 72202</small></span><span class="link-arrow">↗</span>
+    <section class="services" id="services">
+      <div class="section-kicker">02 / WHAT WE DO</div>
+      <div class="services-grid">
+        <article><span>01</span><h3>Scan to BIM</h3><p>Point-cloud based architectural, structural and MEP modeling.</p></article>
+        <article><span>02</span><h3>CAD to BIM</h3><p>Legacy 2D drawings transformed into structured Revit models.</p></article>
+        <article><span>03</span><h3>Revit BIM</h3><p>LOD 300–500 modeling for design, documentation and coordination.</p></article>
+        <article><span>04</span><h3>MEP Coordination</h3><p>Federated models, coordination support and clash-focused workflows.</p></article>
+      </div>
+    </section>
+
+    <section class="projects" id="work">
+      <div class="section-kicker">03 / SELECTED WORK</div>
+      <div class="project-intro">
+        <h2>Built from<br><em>real data.</em></h2>
+        <p>Each project opens into a focused case study — model, scan, video, scope and delivery details.</p>
+      </div>
+      <a class="project-card" href="#contact">
+        <div class="project-image"><img src="assets/bim-model.png" alt="Egypt industrial BIM model"></div>
+        <div class="project-meta">
+          <div><span>EGYPT / INDUSTRIAL</span><strong>LOD 500</strong></div>
+          <h3>Existing Facility → Intelligent BIM</h3>
+          <p>Scan to BIM · Architectural · Structural · MEP</p>
+          <span class="project-link">View project ↗</span>
+        </div>
       </a>
-      <a class="contact-link" href="https://www.linkedin.com/company/the4planers/" target="_blank" rel="noopener noreferrer" aria-label="Visit The4Planers on LinkedIn">
-        <span class="icon linkedin-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.1 8.3H2V22h3.1V8.3ZM3.6 2A1.9 1.9 0 1 0 3.6 5.8 1.9 1.9 0 0 0 3.6 2ZM22 14.2c0-4.1-2.2-6-5.1-6-2.4 0-3.5 1.3-4.1 2.2V8.3H9.7V22h3.1v-6.8c0-1.8.3-3.6 2.6-3.6 2.3 0 2.3 2.1 2.3 3.7V22H21l1-7.8Z"/></svg></span>
-        <span><b>LinkedIn</b><small>The4Planers Company Page</small></span><span class="link-arrow">↗</span>
-      </a>
-      <a class="contact-link" href="mailto:the4planers1234@gmail.com" aria-label="Email The4Planers">
-        <span class="icon mail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7"/></svg></span>
-        <span><b>Email</b><small>the4planers1234@gmail.com</small></span><span class="link-arrow">↗</span>
-      </a>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
 
-<footer><span>© THE4PLANERS</span><span>REALITY → INTELLIGENT BIM</span><div class="footer-social"><a href="https://wa.me/919522972202" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp ↗</a><a href="https://www.linkedin.com/company/the4planers/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn ↗</a></div></footer>
+    <section class="process" id="process">
+      <div class="section-kicker">04 / OUR PROCESS</div>
+      <div class="process-row">
+        <div><b>01</b><strong>SCAN</strong><p>Reality capture</p></div>
+        <div><b>02</b><strong>REGISTER</strong><p>Point-cloud preparation</p></div>
+        <div><b>03</b><strong>MODEL</strong><p>Revit BIM development</p></div>
+        <div><b>04</b><strong>COORDINATE</strong><p>QA/QC & coordination</p></div>
+        <div><b>05</b><strong>DELIVER</strong><p>Ready-to-use BIM</p></div>
+      </div>
+    </section>
 
-<div id="modal" class="modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-panel">
-    <button class="modal-close" data-close>Close ×</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-<script src="script.js"></script>
+    <section class="contact" id="contact">
+      <div class="section-kicker">05 / LET'S WORK TOGETHER</div>
+      <h2>Have a project<br><em>in mind?</em></h2>
+      <div class="contact-row">
+        <a href="https://wa.me/919522972202" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="https://www.linkedin.com/company/the4planers/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© THE4PLANERS</span><span>REALITY → INTELLIGENT BIM</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
