@@ -1,0 +1,94 @@
+[
+  {
+    "id": "egypt-lod500",
+    "title": "Industrial Facility \u2014 Egypt",
+    "eyebrow": "FEATURED PROJECT / SCAN TO BIM",
+    "location": "Egypt",
+    "lod": "LOD 500",
+    "duration": "25 DAYS",
+    "type": "Industrial Scan to BIM",
+    "description": "High-detail Scan to BIM delivery developed from existing survey information into a structured Revit environment. The focus was model accuracy, detailed geometry and usable project information.",
+    "scope": [
+      "Scan to BIM",
+      "Revit Modeling",
+      "High-detail BIM",
+      "QA / Coordination"
+    ],
+    "poster": "assets/projects/02-pe/screenshot-2026-08-15-235732.webp",
+    "video": "assets/projects/02-pe/project.mp4",
+    "images": [
+      "assets/projects/02-pe/screenshot-2026-08-15-235732.webp",
+      "assets/projects/02-pe/screenshot-2026-08-16-002235.webp"
+    ]
+  },
+  {
+    "id": "building-8157",
+    "title": "Building 8157",
+    "eyebrow": "ARCHITECTURAL / SCAN TO BIM",
+    "location": "Germany",
+    "lod": "LOD 300",
+    "duration": "2 DAYS",
+    "type": "Existing Building BIM",
+    "description": "A compact existing-building modeling package developed from captured information into a clean Revit model with plans, elevations, sections and model views.",
+    "scope": [
+      "Scan to BIM",
+      "Architectural Modeling",
+      "Plans & Elevations",
+      "Sections"
+    ],
+    "poster": "assets/projects/building-8157/3d-modal.webp",
+    "video": "assets/projects/building-8157/project.mp4",
+    "images": [
+      "assets/projects/building-8157/modal-with-pointcloud.webp",
+      "assets/projects/building-8157/halfcut.webp",
+      "assets/projects/building-8157/elevations.webp",
+      "assets/projects/building-8157/floor-plan-1.webp",
+      "assets/projects/building-8157/section-1.webp"
+    ]
+  },
+  {
+    "id": "jc-bujumbura",
+    "title": "JC Bujumbura",
+    "eyebrow": "INDUSTRIAL BIM / COORDINATION",
+    "location": "Bujumbura",
+    "lod": "BIM MODEL",
+    "duration": "PROJECT DELIVERY",
+    "type": "Industrial / MEP BIM",
+    "description": "An industrial BIM package showing coordinated architectural and services information in a detailed Revit environment, prepared for clearer digital project understanding and coordination.",
+    "scope": [
+      "Industrial BIM",
+      "MEP Modeling",
+      "Model Coordination",
+      "Visualization"
+    ],
+    "poster": "assets/projects/jc-bujumbura/screenshot-2026-07-31-181526.webp",
+    "video": "assets/projects/jc-bujumbura/project.mp4",
+    "images": [
+      "assets/projects/jc-bujumbura/screenshot-2026-07-31-181716---copy.webp",
+      "assets/projects/jc-bujumbura/img-0473.webp",
+      "assets/projects/jc-bujumbura/img-0474.jpg.webp"
+    ]
+  },
+  {
+    "id": "rdch-riyadh",
+    "title": "RDCH Riyadh",
+    "eyebrow": "REVIT MODELING / EXISTING CONDITIONS",
+    "location": "Riyadh",
+    "lod": "BIM MODEL",
+    "duration": "PROJECT DELIVERY",
+    "type": "Architectural BIM",
+    "description": "A Revit modeling package focused on converting existing architectural information into a clear, editable digital model with strong visual communication.",
+    "scope": [
+      "Architectural BIM",
+      "Revit Modeling",
+      "Existing Conditions",
+      "Model Views"
+    ],
+    "poster": "assets/projects/rdch-riyadh/arch.webp",
+    "video": "assets/projects/rdch-riyadh/project.mp4",
+    "images": [
+      "assets/projects/rdch-riyadh/cut-view.webp",
+      "assets/projects/rdch-riyadh/arch.webp"
+    ]
+  }
+]
