@@ -97,11 +97,11 @@
   "title": "ARCADE HOTEL",
   "description": "A detailed Scan to BIM project for a hotel in Slovakia, transforming existing building data into an accurate and structured Revit model.",
   "location": "Slovakia",
-  "lod": "LOD 300",
+  "lod": "LOD 350",
   "duration": "5 Days",
   "type": "Hotel",
   "poster": "assets/projects/arcade-hotel/01.jpg",
-  "video": "",
+  "video": "assets/projects/arcade-hotel/arcade-hotel.mp4",
   "scope": [
     "SCAN TO BIM",
     "REVIT 2024",
